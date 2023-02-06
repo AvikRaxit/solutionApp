@@ -7,7 +7,7 @@
     <meta name="description" content="CryptoDash admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
     <meta name="keywords" content="admin template, CryptoDash Cryptocurrency Dashboard Template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
     <meta name="author" content="ThemeSelection">
-    <title>Solution- @yield('title')</title>
+    <title>Solution | @yield('title')</title>
     <link rel="apple-touch-icon" href="{{ asset('bcnd/images/ico/apple-icon-120.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('bcnd/images/ico/favicon.ico') }}">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i|Comfortaa:300,400,500,700" rel="stylesheet">
@@ -20,6 +20,7 @@
   
     <link rel="stylesheet" type="text/css" href="{{ asset('bcnd/css/core/menu/menu-types/vertical-compact-menu.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('bcnd/vendors/css/cryptocoins/cryptocoins.css') }}">
+    
     <link rel="stylesheet" type="text/css" href="{{ asset('bcnd/css/pages/timeline.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('bcnd/css/pages/dashboard-ico.css') }}">
    

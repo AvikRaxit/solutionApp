@@ -8,4 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('index', [DashboardController::class, 'index'])->name('dashboard');
+
+Route::prefix('admin')->group(function () {
+    Route::get('index', [DashboardController::class, 'index'])->name('dashboard');
+});
