@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Yummy Bootstrap Template - Index</title>
+  <title>HOME PAGE ................</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,16 +24,7 @@
   <link href="{{asset('front/vendor/aos/aos.css') }}" rel="stylesheet">
   <link href="{{asset('front/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
   <link href="{{asset('front/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="{{asset('front/css/main.css') }}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Yummy - v1.3.0
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -42,9 +33,9 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="{{url('/')}}" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="{{asset('front/img/logo.png') }}" alt=""> -->
+        {{-- <img src="{{asset('front/img/logo.png') }}" alt=""> --}}
         <h1>Yummy<span>.</span></h1>
       </a>
 
@@ -77,9 +68,7 @@
         </ul>
       </nav><!-- .navbar -->
 
-      
-      <a class="btn-book-a-table" href="#book-a-table">Book a Table</a>
-      <a class="btn-book-a-table" href="{{route('login')}}">Login</a>
+      {{-- <a class="btn-book-a-table" href="{{route('login')}}">Login</a> --}}
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
@@ -95,6 +84,7 @@
           <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
+            <a href="{{route('login')}}" class="btn-book-a-table">Login</a>
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
