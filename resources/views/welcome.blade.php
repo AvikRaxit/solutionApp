@@ -65,6 +65,7 @@
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
+          <a class="btn-book-a-table" href="{{route('login')}}">Login</a>
         </ul>
       </nav><!-- .navbar -->
 
@@ -84,7 +85,6 @@
           <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
-            <a href="{{route('login')}}" class="btn-book-a-table">Login</a>
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
