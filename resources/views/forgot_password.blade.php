@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Login</title>
+  <title>Forgot Password</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <style>
         .divider:after,
@@ -36,7 +36,7 @@
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
               <form>
                 <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                  <h3>Sign in here</h3>
+                  <h3>Forgot Password ?</h3>
                 </div>
                 <!-- Email input -->
                 <div class="form-outline mb-4 mt-2">
@@ -45,29 +45,11 @@
                     placeholder="Enter a valid email address" />
                 </div>
       
-                <!-- Password input -->
-                <div class="form-outline mb-3">
-                  <label class="form-label" for="form3Example4">Password <span style="color:red">*</span></label>
-                  <input type="password" id="form3Example4" class="form-control form-control"
-                    placeholder="Enter password" />
-                </div>
-      
-                <div class="d-flex justify-content-between align-items-center">
-                  <!-- Checkbox -->
-                  <div class="form-check mb-0">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-                    <label class="form-check-label" for="form2Example3">
-                      Remember me
-                    </label>
-                  </div>
-                  <a href="{{route('forgot_password')}}" class="text-body">Forgot password?</a>
-                </div>
-      
                 <div class="text-center text-lg-start mt-4 pt-2">
                   <button type="button" class="btn btn-primary"
-                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                  {{-- <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#"
-                      class="link-danger">Register</a></p> --}}
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Submit</button>
+                  <p class="small fw-bold mt-2 pt-1 mb-0">Have an account? <a href="{{route('login')}}"
+                      class="link-danger">Login</a></p>
                 </div>
       
               </form>

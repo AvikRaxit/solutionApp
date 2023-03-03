@@ -10,7 +10,7 @@ Route::get('/', function () {
 });
 Route::get('login', [AuthController::class, 'index'])->name('login');
 
-
+Route::get('forgot_password', [AuthController::class, 'forgotPassword'])->name('forgot_password');
 
 
 

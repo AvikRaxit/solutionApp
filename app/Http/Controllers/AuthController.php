@@ -10,4 +10,9 @@ class AuthController extends Controller
     public function index() {
         return view('login');
     }
+
+    // Forgot password view
+    public function forgotPassword() {
+        return view('forgot_password');
+    }
 }
