@@ -16,6 +16,7 @@ class UserDetails extends Model
         'email',
         'user_id',
         'password',
+        'dob',
         'image',
         'role'
     ];

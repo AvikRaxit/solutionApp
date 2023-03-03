@@ -19,6 +19,7 @@ class CreateUserDetailsTable extends Migration
             $table->string('email')->unique();
             $table->string('user_id');
             $table->string('password');
+            $table->string('dob');
             $table->string('image')->nullable();
             $table->integer('role')->length(1)->default(1);
             $table->timestamps();    
