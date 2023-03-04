@@ -9,7 +9,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('login', [AuthController::class, 'index'])->name('login');
-
+Route::post('storelogin', [AuthController::class, 'successOrFailLogin'])->name('storeLogin');
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('forgot_password', [AuthController::class, 'forgotPassword'])->name('forgot_password');
 
 

@@ -45,7 +45,7 @@
               <a class="dropdown-item" href="account-profile.html">
                 <i class="ft-user"></i> Profile </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="account-login.html">
+              <a class="dropdown-item" href="{{route('logout')}}">
                 <i class="ft-power"></i> Logout </a>
             </div>
           </li>

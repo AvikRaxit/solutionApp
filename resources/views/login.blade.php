@@ -34,21 +34,23 @@
                 class="img-fluid" alt="Sample image">
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-              <form>
+              <form action="{{route('storeLogin')}}" method="POST">
+                @csrf
+                @include('alert')
                 <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                   <h3>Sign in here</h3>
                 </div>
                 <!-- Email input -->
                 <div class="form-outline mb-4 mt-2">
                   <label class="form-label" for="form3Example3">Email address <span style="color:red">*</span></label>
-                  <input type="email" id="form3Example3" class="form-control form-control"
-                    placeholder="Enter a valid email address" />
+                  <input type="text" id="form3Example3" class="form-control form-control" name="user_id"
+                    placeholder="Enter a valid User Id" />
                 </div>
       
                 <!-- Password input -->
                 <div class="form-outline mb-3">
                   <label class="form-label" for="form3Example4">Password <span style="color:red">*</span></label>
-                  <input type="password" id="form3Example4" class="form-control form-control"
+                  <input type="password" id="form3Example4" class="form-control form-control" name="password"
                     placeholder="Enter password" />
                 </div>
       
@@ -64,7 +66,7 @@
                 </div>
       
                 <div class="text-center text-lg-start mt-4 pt-2">
-                  <button type="button" class="btn btn-primary"
+                  <button type="submit" class="btn btn-primary"
                     style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
                   {{-- <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#"
                       class="link-danger">Register</a></p> --}}
