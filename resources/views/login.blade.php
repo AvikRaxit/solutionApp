@@ -26,6 +26,8 @@
   </head>
   <body>
     <div class="container">
+      @include('sweetalert::alert')
+      
       <section class="vh-100">
         <div class="container-fluid h-custom">
           <div class="row d-flex justify-content-center align-items-center h-100">
@@ -36,7 +38,7 @@
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
               <form action="{{route('storeLogin')}}" method="POST">
                 @csrf
-                @include('alert')
+                {{-- @include('alert') --}}
                 <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                   <h3>Sign in here</h3>
                 </div>
@@ -80,5 +82,6 @@
       </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   </body>
 </html>

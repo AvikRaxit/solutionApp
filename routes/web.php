@@ -16,7 +16,7 @@ Route::get('forgot_password', [AuthController::class, 'forgotPassword'])->name('
 
 
 /* Admin HR Dashboard Routes Start */
-Route::prefix('dashboard')->group(function () {
+Route::prefix('dashboard')->middleware(['ifNotLoggedIn'])->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 });
 /* Admin HR Dashboard Routes End */

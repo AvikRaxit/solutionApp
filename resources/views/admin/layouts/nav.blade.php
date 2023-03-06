@@ -37,10 +37,11 @@
               <span class="avatar avatar-online">
                 <img src="{{ asset('bcnd/images/portrait/small/avatar-s-1.png') }}" alt="avatar">
               </span>
+              <span class="mr-1"><span class="user-name text-bold-700">{{$data->user_id}}</span></span>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
               <a class="dropdown-item" href="account-profile.html">
-                <i class="ft-award"></i>John Doe </a>
+                <i class="ft-award"></i>{{$data->name}} </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="account-profile.html">
                 <i class="ft-user"></i> Profile </a>

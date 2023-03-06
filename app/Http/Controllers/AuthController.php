@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\UserDetails;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 use Hash;
 class AuthController extends Controller
 {
@@ -23,9 +24,13 @@ class AuthController extends Controller
                 }
             }
             else{
-                // Toastr::error('Wrong Username and Password', 'ERROR');
-                return redirect()->back()->with('error', 'Wrong Username and Password');
+                Alert::error('Error', 'Wrong Username and Password');
+                return redirect()->back();
             }
+        }
+        else {
+            Alert::error('Error', 'Username is not exist');
+            return redirect()->back();
         }   
     }
 
