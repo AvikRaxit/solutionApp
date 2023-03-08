@@ -49,6 +49,6 @@
     <script src="{{ asset('bcnd/js/core/app.js') }}" type="text/javascript"></script>
    
     <script src="{{ asset('bcnd/js/scripts/pages/dashboard-ico.js') }}" type="text/javascript"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   </body>
 </html>

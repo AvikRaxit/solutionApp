@@ -2,6 +2,7 @@
 @section('title', 'HOME PAGE..............')
 
 @section('content')
+@include('sweetalert::alert')
 <div class="app-content content">
   <div class="content-wrapper">
     <div class="content-header row"></div>
